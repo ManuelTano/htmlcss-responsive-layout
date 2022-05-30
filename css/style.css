@@ -8,7 +8,7 @@
 }
 
 body {
-    padding-top: 150px;
+    padding-top: 100px;
 }
 
 /* INDESTAZIONE */
@@ -30,7 +30,7 @@ header {
 /* COLONNE */
 
 .container {
-    max-width: 375px;
+    max-width: 100%;
     margin: 0 auto;
 }
 
@@ -64,13 +64,6 @@ header {
 /* SEZIONE VIOLA */
 
 
-
-.row-violet {
-    padding: 50px 30px;
-    padding-bottom: 50px;
-    margin-top: 35px;
-}
-
 .super-col {
     height: 700px;
     border: 5px solid #BCB5EE;
@@ -91,7 +84,7 @@ header {
     height: 100%;
 }
 
-#violet {
+.violet {
     background-color: #9792E4;
 }
 
@@ -117,13 +110,102 @@ header {
 
 /* SEZIONE BENEFITS */
 
+.row-benefits {
+    padding-top: 25px;
+}
+
 .col-benefits {
     width: 100%;
-    height: 300px;
+    height: 400px;
     background-color: #FFFFFF;
     border: 25px solid transparent;
+    border-radius: 25px;
+    margin-top: 50px;
 }
 
 #pink {
     background-color: #9792E4
+}
+
+
+/* SEZIONE ABOUT */
+
+.col-about-70 {
+    width: 100%;
+    height: 600px;
+    border: 25px solid transparent;
+    
+}
+
+.col-about-30 {
+    width: 100%;
+    height: 300px;
+    border: 25px solid transparent;
+    
+}
+
+/* SEZIONE GET STARTED */
+
+.text {
+    width: 100%;
+    height: 600px;
+}
+
+
+/* FOOTER */
+
+footer {
+    background-color: #333333;
+    height: 200px;
+}
+
+.nomargin {
+    margin-top: 0px;
+}
+
+
+/* RESPONSIVE */
+
+@media screen and (min-width: 809px) {
+    .row {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .big-col {
+        width: 65%;
+    }
+
+    .small-col {
+        width: 30%;
+    }
+
+    .tall {
+        height: 500px;
+    }
+
+    .row-benefits{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .col-benefits {
+        width: 47%;
+    }
+
+    .row-about {
+        display: flex;
+
+    }
+
+    .col-about-70 {
+        width: 50%;
+    }
+
+    .col-about-30 {
+        width: 50%;
+    }
 }
