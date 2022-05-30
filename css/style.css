@@ -1,0 +1,49 @@
+/* GENERICS */
+
+* {
+    font-family: 'PT Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* INDESTAZIONE */
+
+header {
+    height: 100px;
+    background-color: #0084FD;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 30px;
+}
+
+/* CORPO PRINCIPALE */
+
+.container {
+    max-width: 375px;
+    margin: 0 auto;
+}
+
+.row{
+    display: flex;
+    flex-direction: column;
+}
+
+.big-col{
+    height: 500px;
+}
+
+.small-col{
+    height: 350px;
+}
+
+.big-col, .small-col {
+    background-color: #B5DDFF;
+    border-radius: 20px;
+    width: 100%;
+}
