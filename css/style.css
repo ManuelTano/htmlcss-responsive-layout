@@ -31,14 +31,23 @@ header {
 }
 
 .nav-bar {
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.menu {
+ul {
     list-style-type: none;
-    display: none;
+    display: flex;
+}
+
+ul li {
+    padding-right: 25px;
+}
+
+ul li:last-child {
+    padding-right: 0px;
 }
 
 a {
@@ -56,6 +65,8 @@ p {
     color: grey;
     
 }
+
+
 .button {
     background-color: #0084FD;
     border-radius: 35px;
@@ -65,6 +76,17 @@ p {
 
 .fa-apple {
     margin-right: 5px;
+}
+
+.menu {
+    display: none;
+}
+
+.btn-white {
+    background-color: white;
+    color: black;
+    border-radius: 35px;
+    padding: 10px 25px;
 }
 
 /* COLONNE */
@@ -118,9 +140,6 @@ h2 {
     color: #0084FD;
 }
 
-.small-col .card {
-    padding-bottom: 25px;
-}
 
 /* SEZIONE VIOLA */
 
@@ -160,6 +179,7 @@ h1 {
     background-color: #9792E4;
     padding: 10px;
     border-radius: 100px;
+    color: black;
 }
 
 .arrow {
@@ -293,28 +313,44 @@ footer {
 
 @media screen and (min-width: 809px) {
 
+
+    /* COLONNE */
+
+    .container {
+        width: 800px;
+    }
+    
     .row {
         display: flex;
-        flex-direction: row;
         flex-wrap: wrap;
         justify-content: space-between;
     }
 
     .big-col {
-        width: calc(100% / 3 * 2);
+        width: calc(100% / 3 * 2 - 25px);
     }
 
     .small-col {
-        width: calc(100% / 3);
+        width: calc(100% / 3 - 25px);
+        margin-left: 25px;
     }
 
-    .tall {
-        height: 500px;
+    /* SEZIONE VIOLA */
+
+    .col-white{
+        margin-left: 30px;
     }
 
-    .row-testimonial{
+    /* SEZIONE TESTIMONIALS */
+
+    .flex {
         display: flex;
+        justify-content: space-between;
+        align-items: center;
     }
+
+    /* SEZIONE BENEFITS */
+
     .row-benefits{
         display: flex;
         flex-wrap: wrap;
@@ -324,6 +360,15 @@ footer {
     .col-benefits {
         width: 47%;
     }
+
+    
+    /* GET STARTED */
+
+    .row-started {
+        padding-top: 25px;
+    }
+
+    /* ABOUT US */
 
     .row-about {
         display: flex;
@@ -337,15 +382,27 @@ footer {
     .col-about-30 {
         width: 50%;
     }
+    
+    /* FOOTER */
+
+    footer {
+        padding-top: 25px;
+    }
 
 }
 
 @media screen and (min-width: 992px) {
+
     .container {
         width: 70%;
         margin: 0 auto;
     }
 
+    .nav-bar {
+        margin: 0 auto;
+        width: 70%;
+        text-align: center;
+    }
     .super-col {
         width: 45%;
     }
@@ -360,5 +417,11 @@ footer {
         align-items: flex-end;
     }
 
-    
+    .icon {
+        display: none;
+    }
+
+    .menu {
+        display: block;
+    }
 }
