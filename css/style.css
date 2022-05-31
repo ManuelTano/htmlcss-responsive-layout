@@ -330,9 +330,6 @@ footer {
         width: calc(100% / 3 * 2 - 25px);
     }
 
-    .d-block {
-        width: 50%;
-    }
 
     .small-col {
         width: calc(100% / 3 - 25px);
@@ -430,5 +427,27 @@ footer {
 
     .menu {
         display: block;
+    }
+
+    /* SEZIONE BENEFITS */
+
+    .row-benefits {
+        display: flex;
+    }
+
+    .col-benefits {
+        width: calc(100% / 3 - 25px);
+        margin-left: 25px;
+    }
+
+    /* SEZIONE ABOUT */
+
+    .col-about-70{
+        width: 70%;
+        margin-top: 40px;
+    }
+
+    .col-about-30 {
+        width: 30%;
     }
 }
