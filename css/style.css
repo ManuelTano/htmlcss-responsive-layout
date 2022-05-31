@@ -335,6 +335,9 @@ footer {
         width: calc(100% / 3 - 25px);
     }
 
+    .d-block {
+        width: 70%;
+    }
     
     /* SEZIONE TESTIMONIALS */
 
@@ -401,6 +404,10 @@ footer {
         margin: 0 auto;
         width: 70%;
         text-align: center;
+    }
+
+    .d-block {
+        width: 70%;
     }
     .super-col {
         width: 45%;
