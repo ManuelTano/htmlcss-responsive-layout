@@ -2,6 +2,8 @@
 
 * {
     font-family: 'PT Sans', sans-serif;
+    font-weight: 700;
+
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -11,7 +13,7 @@ body {
     padding-top: 100px;
 }
 
-/* INDESTAZIONE */
+/* INDENTAZIONE */
 
 header {
     height: 100px;
@@ -25,6 +27,40 @@ header {
     align-items: center;
     padding: 0 30px;
     box-shadow: 1px lightgrey;
+    color: white;
+}
+
+.nav-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+ul {
+    display: none;
+}
+
+a {
+    list-style-type: none;
+    text-decoration: none;
+    color: white;
+}
+
+p {
+    color: grey;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.button {
+    background-color: #0084FD;
+    border-radius: 35px;
+    padding: 10px 50px;
+    margin-bottom: 25px;
+}
+
+.fa-apple {
+    margin-right: 5px;
 }
 
 /* COLONNE */
@@ -39,20 +75,12 @@ header {
     flex-direction: column;
 }
 
-.big-col{
-    height: 500px;
-}
-
-.small-col{
-    height: 350px;
-}
 
 .big-col, .small-col {
     background-color: #B5DDFF;
     border-radius: 20px;
     width: 100%;
     margin-top: 30px;
-    border: 25px solid transparent;
 }
 
 .padding{
@@ -61,33 +89,64 @@ header {
     padding-bottom: 50px;
 }
 
+img {
+    width: 100%;
+}
+
+.d-block {
+    display: block;
+}
+
+h2 {
+    color: #0084FD;
+}
+
+.image {
+    margin-top: 25px;
+}
+
+.center {
+    text-align: center;
+}
+
+.big {
+    font-size: 80px;
+    color: #0084FD;
+}
+
+.small-col .card {
+    padding-bottom: 25px;
+}
+
 /* SEZIONE VIOLA */
 
-
-.super-col {
-    height: 700px;
-    border: 5px solid #BCB5EE;
-    border: 25px solid transparent;
-}
 
 .col-white {
     border-radius: 50px;
     background-color: #FFFFFF;
     width: 100%;
-    height: 600px;
     margin-top: 35px;
-    border: 25px solid transparent;
 }
 
 .card {
-    border: 2px dashed black;
     height: 100%;
+    padding-top: 30px;
+    padding-left: 30px;
+    padding-right: 30px;
 }
 
 .violet {
     background-color: #9792E4;
 }
 
+h1 {
+    color: white;
+    font-size: 50px;
+}
+
+.white {
+    color: white;
+}
 /* SEZIONE TESTIMONIALS */
 
 
@@ -208,6 +267,7 @@ footer {
     .col-about-30 {
         width: 50%;
     }
+
 }
 
 @media screen and (min-width: 992px) {
@@ -229,4 +289,6 @@ footer {
         justify-content: center;
         align-items: flex-end;
     }
+
+    
 }
