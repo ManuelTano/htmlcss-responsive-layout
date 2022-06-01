@@ -349,12 +349,14 @@ footer {
         color: white;
     }
 
-    .image {
+    .col-violet .card {
         display: flex;
-        justify-content: flex-start;
     }
 
-    
+    .card .text {
+        margin-left: 25px;
+    }
+
     .col-violet .card {
         text-align: left;
     }
@@ -431,11 +433,6 @@ footer {
         display: flex;
     }
 
-    .card img {
-        height: 300px;
-        width: 250px;
-    }
-
 
     /* SEZIONE VIOLA */
 
@@ -459,13 +456,12 @@ footer {
 
     /* SEZIONE TESTIMONIAL */
 
-    .image {
+    .col-violet .card {
         display: flex;
-        justify-content: flex-start;
     }
 
-    .col-violet .card {
-        text-align: left;
+    .card .text {
+        margin-left: 25px;
     }
 
     /* SEZIONE BENEFITS */
